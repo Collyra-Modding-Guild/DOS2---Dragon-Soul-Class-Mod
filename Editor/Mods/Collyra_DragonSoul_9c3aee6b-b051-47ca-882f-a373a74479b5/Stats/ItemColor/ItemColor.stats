@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="d4bbd7d3-eef6-4a97-a253-7fe5d06f83ef">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="DragonSoul" />
+        <field name="Primary Color" type="ColorStatObjectFieldDefinition" value="#FF808080" />
+        <field name="Secondary Color" type="ColorStatObjectFieldDefinition" value="#FFF5F5DC" />
+        <field name="Tertiary Color" type="ColorStatObjectFieldDefinition" value="#FF000000" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

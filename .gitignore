@@ -21,6 +21,11 @@ Editor/*
 Editor/Mods/*
 !Editor/Mods/Collyra_DragonSoul*
 
+# Story files   
+*.div
+*.raw
+*.lnk
+log.txt
 
 # Asset Pak
 *.pak

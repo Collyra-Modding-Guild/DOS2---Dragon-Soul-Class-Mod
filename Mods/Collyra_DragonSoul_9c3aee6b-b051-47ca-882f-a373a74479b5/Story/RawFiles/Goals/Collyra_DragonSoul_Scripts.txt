@@ -1,0 +1,18 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+//REGION DEBUG_DRAGONSOUL_SKILLS
+
+IF
+CharacterUsedItem(_Char, cb34938b-519c-4c69-a1e4-d7c1b40c005d)
+AND
+IsGameLevel("Collyra_DragonSoul_Testlevel", 1)
+THEN
+CharacterApplyPreset(_Char, "DragonSoul");
+
+//END_REGION
+EXITSECTION
+
+ENDEXITSECTION

@@ -1,0 +1,2 @@
+new itemcolor "DragonSoul","FF808080","FFF5F5DC","FF000000"
+

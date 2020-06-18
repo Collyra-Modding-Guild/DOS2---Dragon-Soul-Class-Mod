@@ -1,0 +1,106 @@
+new equipment "Class_DragonSoul_Start"
+add equipmentgroup
+add equipment entry "ARM_DragonSoul_UpperBody"
+add equipmentgroup
+add equipment entry "ARM_DragonSoul_LowerBody"
+add equipmentgroup
+add equipment entry "WPN_CraftedSword_1H"
+add equipmentgroup
+add equipment entry "WPN_CraftedShield"
+add equipmentgroup
+add equipment entry "GRN_Grenade_Molotov_A"
+add equipmentgroup
+add equipment entry "POTION_Minor_Healing_Potion"
+add equipmentgroup
+add equipment entry "SCROLL_Resurrect"
+add equipmentgroup
+add equipment entry "CONT_Backpack_A_SourceHunter"
+
+new equipment "Class_DragonSoul_Start_Undead"
+add equipmentgroup
+add equipment entry "ARM_DragonSoul_UpperBody"
+add equipmentgroup
+add equipment entry "ARM_DragonSoul_LowerBody"
+add equipmentgroup
+add equipment entry "ARM_Purge_Helmet"
+add equipmentgroup
+add equipment entry "ARM_Purge_Boots"
+add equipmentgroup
+add equipment entry "ARM_Purge_Gloves"
+add equipmentgroup
+add equipment entry "WPN_CraftedSword_1H"
+add equipmentgroup
+add equipment entry "WPN_CraftedShield"
+add equipmentgroup
+add equipment entry "GRN_Grenade_Molotov_A"
+add equipmentgroup
+add equipment entry "CON_Potion_Poison_A"
+add equipmentgroup
+add equipment entry "SCROLL_Resurrect"
+add equipmentgroup
+add equipment entry "CONT_Backpack_A_SourceHunter"
+
+new equipment "Class_DragonSoul_Lizards"
+add equipmentgroup
+add equipment entry "ARM_Fighter_Helmet"
+add equipmentgroup
+add equipment entry "ARM_DragonSoul_UpperBody"
+add equipmentgroup
+add equipment entry "ARM_DragonSoul_LowerBody"
+add equipmentgroup
+add equipment entry "ARM_Fighter_Gloves"
+add equipmentgroup
+add equipment entry "ARM_Fighter_Boots"
+add equipmentgroup
+add equipment entry "WPN_Fighter_Sword_1H_Lizards"
+add equipmentgroup
+add equipment entry "WPN_Fighter_Shield_Lizards"
+
+new equipment "Class_DragonSoul_Elves"
+add equipmentgroup
+add equipment entry "ARM_Fighter_Helmet"
+add equipmentgroup
+add equipment entry "ARM_DragonSoul_UpperBody"
+add equipmentgroup
+add equipment entry "ARM_DragonSoul_LowerBody"
+add equipmentgroup
+add equipment entry "ARM_Fighter_Gloves"
+add equipmentgroup
+add equipment entry "ARM_Fighter_Boots"
+add equipmentgroup
+add equipment entry "WPN_Fighter_Sword_1H_Elves"
+add equipmentgroup
+add equipment entry "WPN_Fighter_Shield_Elves"
+
+new equipment "Class_DragonSoul_Dwarves"
+add equipmentgroup
+add equipment entry "ARM_Fighter_Helmet"
+add equipmentgroup
+add equipment entry "ARM_DragonSoul_UpperBody"
+add equipmentgroup
+add equipment entry "ARM_DragonSoul_LowerBody"
+add equipmentgroup
+add equipment entry "ARM_Fighter_Gloves"
+add equipmentgroup
+add equipment entry "ARM_Fighter_Boots"
+add equipmentgroup
+add equipment entry "WPN_Fighter_Sword_1H_Dwarves"
+add equipmentgroup
+add equipment entry "WPN_Fighter_Shield_Dwarves"
+
+new equipment "Class_DragonSoul_Humans"
+add equipmentgroup
+add equipment entry "ARM_Fighter_Helmet"
+add equipmentgroup
+add equipment entry "ARM_DragonSoul_UpperBody"
+add equipmentgroup
+add equipment entry "ARM_DragonSoul_LowerBody"
+add equipmentgroup
+add equipment entry "ARM_Fighter_Gloves"
+add equipmentgroup
+add equipment entry "ARM_Fighter_Boots"
+add equipmentgroup
+add equipment entry "WPN_Fighter_Sword_1H_Humans"
+add equipmentgroup
+add equipment entry "WPN_Fighter_Shield_Humans"
+

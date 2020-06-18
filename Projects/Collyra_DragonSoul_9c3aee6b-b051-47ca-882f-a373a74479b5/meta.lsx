@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<save>
+    <header version="2" />
+    <version major="3" minor="6" revision="6" build="0" />
+    <region id="MetaData">
+        <node id="root">
+            <attribute id="Module" value="9c3aee6b-b051-47ca-882f-a373a74479b5" type="23" />
+            <attribute id="Name" value="Collyra_DragonSoul" type="23" />
+            <attribute id="Type" value="Add-on" type="23" />
+            <attribute id="UUID" value="af14e7a6-dea8-419c-b578-4c1365f5af00" type="23" />
+        </node>
+    </region>
+</save>

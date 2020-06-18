@@ -1,0 +1,4 @@
+new skillset "Class_DragonSoul"
+add skill "Cone_GroundSmash"
+add skill "Target_EnemyWinterBlast"
+add skill "Target_EnemyEnrage_Wolf"
