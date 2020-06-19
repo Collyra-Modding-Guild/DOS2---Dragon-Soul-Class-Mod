@@ -11,6 +11,7 @@ AND
 IsGameLevel("Collyra_DragonSoul_Testlevel", 1)
 THEN
 CharacterApplyPreset(_Char, "DragonSoul");
+CharacterAddSkill(_Char, "Rain_DragounSoul_FireRain");
 
 //END_REGION
 EXITSECTION

@@ -17,7 +17,7 @@
     <stat_object is_substat="true">
       <fields>
         <field name="Name" type="NameStatObjectFieldDefinition" value="New_Stat_0" />
-        <field name="Skills" type="StatReferenceStatObjectFieldDefinition" stat_name="Target_EnemyEnrage_Wolf" />
+        <field name="Skills" type="StatReferenceStatObjectFieldDefinition" stat_name="Rain_DragonSoul_FireRain" />
         <field name="Using" type="BaseClassStatObjectFieldDefinition" value="Class_DragonSoul" />
       </fields>
     </stat_object>
