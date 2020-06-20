@@ -10,7 +10,7 @@
     <stat_object is_substat="true">
       <fields>
         <field name="Name" type="NameStatObjectFieldDefinition" value="Class_DragonSoul_substat" />
-        <field name="Skills" type="StatReferenceStatObjectFieldDefinition" stat_name="Target_EnemyWinterBlast" />
+        <field name="Skills" type="StatReferenceStatObjectFieldDefinition" stat_name="Summon_DragonSoul_Soul" />
         <field name="Using" type="BaseClassStatObjectFieldDefinition" value="Class_DragonSoul" />
       </fields>
     </stat_object>

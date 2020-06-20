@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="81d21913-ef1d-4fd8-bc01-1dcee5d3e4eb">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="DragonSoul_Soul" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="Ability" type="EnumerationStatObjectFieldDefinition" value="10" enumeration_type_name="SkillAbility" />
+        <field name="Tier" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="SkillTier" />
+        <field name="ActionPoints" type="IntegerStatObjectFieldDefinition" value="2" />
+        <field name="Cooldown" type="IntegerStatObjectFieldDefinition" value="6" />
+        <field name="AIFlags" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="AIFlags" />
+        <field name="Lifetime" type="IntegerStatObjectFieldDefinition" value="10" />
+        <field name="SummonLevel" type="IntegerStatObjectFieldDefinition" value="-1" />
+        <field name="MemorizationRequirements" type="StringStatObjectFieldDefinition" value="Summoning 0" />
+        <field name="SkillProperties" type="StringStatObjectFieldDefinition" value="DRAGON,100,-1;" />
+        <field name="Memory Cost" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="Magic Cost" type="IntegerStatObjectFieldDefinition" value="0" />
+        <field name="Template" type="StringStatObjectFieldDefinition" value="a91e4406-36a5-4b54-bffc-10158af95c78" />
+        <field name="TargetRadius" type="IntegerStatObjectFieldDefinition" value="13" />
+        <field name="SummonCount" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Summoning_SummonIncarnate" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Dragon Soul " />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Summon your Soul." />
+        <field name="FXScale" type="IntegerStatObjectFieldDefinition" value="100" />
+        <field name="PrepareAnimationInit" type="StringStatObjectFieldDefinition" value="skill_prepare_totem_01_start" />
+        <field name="PrepareAnimationLoop" type="StringStatObjectFieldDefinition" value="skill_prepare_totem_01_loop" />
+        <field name="PrepareEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_Skills_Totem_Prepare_Totem_Root_01_Nebula,KeepRot,Detach" />
+        <field name="CastAnimation" type="StringStatObjectFieldDefinition" value="skill_cast_summon_totem_01_cast" />
+        <field name="CastTextEvent" type="StringStatObjectFieldDefinition" value="cast" />
+        <field name="CastEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_Skills_Totem_Cast_Summon_Totem_Root_01_Nebula:Dummy_Root" />
+        <field name="CastEffectTextEvent" type="StringStatObjectFieldDefinition" value="cast" />
+        <field name="TargetCastEffect" type="StringStatObjectFieldDefinition" value="{TargetSurfaceType}[None]RS3_FX_Skills_Totem_Impact_Summon_Default_01 [Blood]RS3_FX_Skills_Totem_Impact_Summon_Blood_01 [Water]RS3_FX_Skills_Totem_Impact_Summon_Ice_01 [WaterElectrified]RS3_FX_Skills_Totem_Impact_Summon_Lightning_01 [BloodElectrified]RS3_FX_Skills_Totem_Impact_Summon_Lightning_01 [Fire]RS3_FX_Skills_Totem_Impact_Summon_Fire_01 [Oil]RS3_FX_Skills_Totem_Impact_Summon_Oil_01 [Poison]RS3_FX_Skills_Totem_Impact_Summon_Poison_01" />
+        <field name="TargetEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_Skills_Totem_Target_Nebula_01" />
+        <field name="AreaRadius" type="IntegerStatObjectFieldDefinition" value="20" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>
