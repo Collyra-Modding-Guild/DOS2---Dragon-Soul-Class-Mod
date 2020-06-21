@@ -10,7 +10,7 @@
         <field name="ActionPoints" type="IntegerStatObjectFieldDefinition" value="0" />
         <field name="Cooldown" type="IntegerStatObjectFieldDefinition" value="6" />
         <field name="AIFlags" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="AIFlags" />
-        <field name="SkillProperties" type="StringStatObjectFieldDefinition" value="DALLISDRAGON,100,10,a91e4406-36a5-4b54-bffc-10158af95c78,0" />
+        <field name="SkillProperties" type="StringStatObjectFieldDefinition" value="FULL_DRAGON_SOUL,100, 2" />
         <field name="AreaRadius" type="IntegerStatObjectFieldDefinition" value="0" />
         <field name="AddWeaponRange" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
         <field name="TargetConditions" type="StringStatObjectFieldDefinition" value="Self" />
