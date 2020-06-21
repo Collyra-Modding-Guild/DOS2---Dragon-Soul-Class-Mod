@@ -4,7 +4,7 @@
     <stat_object is_substat="false">
       <fields>
         <field name="Name" type="NameStatObjectFieldDefinition" value="Class_DragonSoul" />
-        <field name="Skills" type="StatReferenceStatObjectFieldDefinition" stat_name="Cone_GroundSmash" />
+        <field name="Skills" type="StatReferenceStatObjectFieldDefinition" stat_name="Shout_DragonSoul_Pep" />
       </fields>
     </stat_object>
     <stat_object is_substat="true">

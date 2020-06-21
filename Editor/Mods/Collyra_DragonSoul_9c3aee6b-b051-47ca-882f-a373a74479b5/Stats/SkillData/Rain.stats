@@ -40,7 +40,7 @@
         <field name="ConsequencesStartTime" type="IntegerStatObjectFieldDefinition" value="1000" />
         <field name="CycleConditions" type="StringStatObjectFieldDefinition" value="Character;!Dead" />
         <field name="Damage Multiplier" type="IntegerStatObjectFieldDefinition" value="65" />
-        <field name="DamageType" type="EnumerationStatObjectFieldDefinition" value="6" enumeration_type_name="Damage Type" />
+        <field name="DamageType" type="EnumerationStatObjectFieldDefinition" value="11" enumeration_type_name="Damage Type" />
       </fields>
     </stat_object>
   </stat_objects>
