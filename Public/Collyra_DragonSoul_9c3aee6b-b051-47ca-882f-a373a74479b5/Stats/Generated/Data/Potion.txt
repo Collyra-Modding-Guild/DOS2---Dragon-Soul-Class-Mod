@@ -1,0 +1,10 @@
+new entry "Stats_DragonSoul_FulLDragon"
+type "Potion"
+using "Stats_Polymorphed"
+data "Strength" "9"
+data "Finesse" "-10"
+data "PhysicalArmorMastery" "500"
+data "Loremaster" "3"
+data "ArmorBoost" "150"
+data "Damage" "10"
+

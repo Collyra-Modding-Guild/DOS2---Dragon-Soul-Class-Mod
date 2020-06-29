@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="48e63fff-81e0-42bb-ac51-39f5904b97be">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_DragonSoul_FulLDragon" />
+        <field name="Using" type="BaseClassStatObjectFieldDefinition" value="Stats_Polymorphed" />
+        <field name="Strength" type="EnumerationStatObjectFieldDefinition" value="191" enumeration_type_name="Penalty PreciseQualifier" />
+        <field name="Finesse" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="Penalty PreciseQualifier" />
+        <field name="PhysicalArmorMastery" type="StringStatObjectFieldDefinition" value="500" />
+        <field name="Loremaster" type="IntegerStatObjectFieldDefinition" value="3" />
+        <field name="ArmorBoost" type="IntegerStatObjectFieldDefinition" value="150" />
+        <field name="Damage" type="EnumerationStatObjectFieldDefinition" value="11" enumeration_type_name="Qualifier" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>
