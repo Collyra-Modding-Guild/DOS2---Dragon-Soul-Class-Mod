@@ -1,0 +1,30 @@
+INIT
+CHARACTER:%Caster=null
+
+EVENTS
+//Change Alignment to Good
+EVENT Collyra_DS_AligmentToGood
+VARS
+CHARACTER:_Caster
+
+ON
+	OnSkillCast(_Caster, Shout_DragonSoul_Align_G)
+	
+ACTIONS
+	SetTag(_Caster, DS_Align_G)
+	CharacterRemoveSkill(_Caster, Shout_DragonSoul_Align_E)
+	CharacterRemoveSkill(_Caster, Shout_DragonSoul_Align_G)
+	
+	
+//Change Alignment to Evil
+EVENT Collyra_DS_AligmentTo
+VARS
+CHARACTER:_Caster
+
+ON
+	OnSkillCast(_Caster, Shout_DragonSoul_Align_E)
+	
+ACTIONS
+	SetTag(_Caster, DS_Align_E)
+	CharacterRemoveSkill(_Caster, Shout_DragonSoul_Align_E)
+	CharacterRemoveSkill(_Caster, Shout_DragonSoul_Align_G)
