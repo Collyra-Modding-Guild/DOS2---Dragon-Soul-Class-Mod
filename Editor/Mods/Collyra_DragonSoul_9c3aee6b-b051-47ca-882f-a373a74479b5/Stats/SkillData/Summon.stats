@@ -16,7 +16,7 @@
         <field name="SkillProperties" type="StringStatObjectFieldDefinition" value="DRAGON,100,-1;" />
         <field name="Memory Cost" type="IntegerStatObjectFieldDefinition" value="1" />
         <field name="Magic Cost" type="IntegerStatObjectFieldDefinition" value="0" />
-        <field name="Template" type="StringStatObjectFieldDefinition" value="a91e4406-36a5-4b54-bffc-10158af95c78" />
+        <field name="Template" type="StringStatObjectFieldDefinition" value="fe326d12-5aa9-4df0-963b-eaafe3577bc8" />
         <field name="TargetRadius" type="IntegerStatObjectFieldDefinition" value="13" />
         <field name="SummonCount" type="IntegerStatObjectFieldDefinition" value="1" />
         <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Summoning_SummonIncarnate" />
@@ -33,6 +33,43 @@
         <field name="TargetCastEffect" type="StringStatObjectFieldDefinition" value="{TargetSurfaceType}[None]RS3_FX_Skills_Totem_Impact_Summon_Default_01 [Blood]RS3_FX_Skills_Totem_Impact_Summon_Blood_01 [Water]RS3_FX_Skills_Totem_Impact_Summon_Ice_01 [WaterElectrified]RS3_FX_Skills_Totem_Impact_Summon_Lightning_01 [BloodElectrified]RS3_FX_Skills_Totem_Impact_Summon_Lightning_01 [Fire]RS3_FX_Skills_Totem_Impact_Summon_Fire_01 [Oil]RS3_FX_Skills_Totem_Impact_Summon_Oil_01 [Poison]RS3_FX_Skills_Totem_Impact_Summon_Poison_01" />
         <field name="TargetEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_Skills_Totem_Target_Nebula_01" />
         <field name="AreaRadius" type="IntegerStatObjectFieldDefinition" value="20" />
+        <field name="TemplateAdvanced" type="StringStatObjectFieldDefinition" value="9fb4e004-2981-4e4f-97a5-4c2b89583d23" />
+        <field name="TemplateOverride" type="StringStatObjectFieldDefinition" value="9fb4e004-2981-4e4f-97a5-4c2b89583d23" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="Incarnate" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="Ability" type="EnumerationStatObjectFieldDefinition" value="10" enumeration_type_name="SkillAbility" />
+        <field name="Tier" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="SkillTier" />
+        <field name="ActionPoints" type="IntegerStatObjectFieldDefinition" value="2" />
+        <field name="Cooldown" type="IntegerStatObjectFieldDefinition" value="6" />
+        <field name="AIFlags" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="AIFlags" />
+        <field name="Lifetime" type="IntegerStatObjectFieldDefinition" value="10" />
+        <field name="SummonLevel" type="IntegerStatObjectFieldDefinition" value="-1" />
+        <field name="MemorizationRequirements" type="StringStatObjectFieldDefinition" value="Summoning 1" />
+        <field name="SkillProperties" type="StringStatObjectFieldDefinition" value="TARGET:IF(Tagged:INCARNATE_S&amp;(InSurface:SurfaceFire|InSurface:SurfaceLava)):INF_FIRE,100,-1;TARGET:IF((InSurface:SurfaceWater|InSurface:SurfaceDeepwater)&amp;Tagged:INCARNATE_S):INF_WATER,100,-1;TARGET:IF(InSurface:SurfaceBlood&amp;Tagged:INCARNATE_S):INF_BLOOD,100,-1;TARGET:IF(Tagged:INCARNATE_S&amp;(InSurface:SurfaceWaterElectrified|InSurface:SurfaceBloodElectrified)):INF_ELECTRIC,100,-1;TARGET:IF(InSurface:SurfacePoison&amp;Tagged:INCARNATE_S):INF_POISON,100,-1;TARGET:IF(InSurface:SurfaceOil&amp;Tagged:INCARNATE_S):INF_OIL,100,-1;TARGET:IF(Tagged:INCARNATE_G&amp;(InSurface:SurfaceFire|InSurface:SurfaceLava)):INF_FIRE_G,100,-1;TARGET:IF(InSurface:SurfaceWater&amp;Tagged:INCARNATE_G):INF_WATER_G,100,-1;TARGET:IF(InSurface:SurfaceBlood&amp;Tagged:INCARNATE_G):INF_BLOOD_G,100,-1;TARGET:IF(Tagged:INCARNATE_G&amp;(InSurface:SurfaceWaterElectrified|InSurface:SurfaceBloodElectrified)):INF_ELECTRIC_G,100,-1;TARGET:IF(InSurface:SurfacePoison&amp;Tagged:INCARNATE_G):INF_POISON_G,100,-1;TARGET:IF(InSurface:SurfaceOil&amp;Tagged:INCARNATE_G):INF_OIL_G,100,-1;" />
+        <field name="Memory Cost" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="Magic Cost" type="IntegerStatObjectFieldDefinition" value="0" />
+        <field name="Template" type="StringStatObjectFieldDefinition" value="118d7359-b7d5-41ea-8c55-86ce27afceba" />
+        <field name="TemplateAdvanced" type="StringStatObjectFieldDefinition" value="13f9314d-e744-4dc5-acf2-c6bf77a04892" />
+        <field name="TemplateOverride" type="StringStatObjectFieldDefinition" value="13f9314d-e744-4dc5-acf2-c6bf77a04892" />
+        <field name="TargetRadius" type="IntegerStatObjectFieldDefinition" value="13" />
+        <field name="SummonCount" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Summoning_SummonIncarnate" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="| Summon Incarnate |" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="| Summon your personal demon that you can upgrade with Infusions.|" />
+        <field name="FXScale" type="IntegerStatObjectFieldDefinition" value="100" />
+        <field name="PrepareAnimationInit" type="StringStatObjectFieldDefinition" value="skill_prepare_totem_01_start" />
+        <field name="PrepareAnimationLoop" type="StringStatObjectFieldDefinition" value="skill_prepare_totem_01_loop" />
+        <field name="PrepareEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_Skills_Totem_Prepare_Totem_Root_01_Nebula,KeepRot,Detach" />
+        <field name="CastAnimation" type="StringStatObjectFieldDefinition" value="skill_cast_summon_totem_01_cast" />
+        <field name="CastTextEvent" type="StringStatObjectFieldDefinition" value="cast" />
+        <field name="CastEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_Skills_Totem_Cast_Summon_Totem_Root_01_Nebula:Dummy_Root" />
+        <field name="CastEffectTextEvent" type="StringStatObjectFieldDefinition" value="cast" />
+        <field name="TargetCastEffect" type="StringStatObjectFieldDefinition" value="{TargetSurfaceType}[None]RS3_FX_Skills_Totem_Impact_Summon_Default_01 [Blood]RS3_FX_Skills_Totem_Impact_Summon_Blood_01 [Water]RS3_FX_Skills_Totem_Impact_Summon_Ice_01 [WaterElectrified]RS3_FX_Skills_Totem_Impact_Summon_Lightning_01 [BloodElectrified]RS3_FX_Skills_Totem_Impact_Summon_Lightning_01 [Fire]RS3_FX_Skills_Totem_Impact_Summon_Fire_01 [Oil]RS3_FX_Skills_Totem_Impact_Summon_Oil_01 [Poison]RS3_FX_Skills_Totem_Impact_Summon_Poison_01" />
+        <field name="TargetEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_Skills_Totem_Target_Nebula_01" />
       </fields>
     </stat_object>
   </stat_objects>
