@@ -6,15 +6,25 @@
         <node id="root">
             <children>
                 <node id="Tag">
+<<<<<<< HEAD
                     <attribute id="Description" value="" type="23" />
                     <attribute id="Name" value="DS_Align_G" type="23" />
+=======
+                    <attribute id="Description" value="En Pep et saluda." type="23" />
+                    <attribute id="Name" value="SDRAGON_G" type="23" />
+>>>>>>> 6f99751af86e545ff245259e620664fc542d0a7a
                     <children>
                         <node id="Categories" />
                     </children>
                 </node>
                 <node id="Tag">
+<<<<<<< HEAD
                     <attribute id="Description" value="" type="23" />
                     <attribute id="Name" value="DS_Align_E" type="23" />
+=======
+                    <attribute id="Description" value="En Pep t&apos;ignora." type="23" />
+                    <attribute id="Name" value="SDRAGON_E" type="23" />
+>>>>>>> 6f99751af86e545ff245259e620664fc542d0a7a
                     <children>
                         <node id="Categories" />
                     </children>
