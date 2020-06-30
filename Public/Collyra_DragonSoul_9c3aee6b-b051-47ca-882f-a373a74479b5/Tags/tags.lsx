@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<save>
+    <header version="2" />
+    <version major="3" minor="6" revision="6" build="0" />
+    <region id="Tags">
+        <node id="root">
+            <children>
+                <node id="Tag">
+                    <attribute id="Description" value="" type="23" />
+                    <attribute id="Name" value="DS_Align_G" type="23" />
+                    <children>
+                        <node id="Categories" />
+                    </children>
+                </node>
+                <node id="Tag">
+                    <attribute id="Description" value="" type="23" />
+                    <attribute id="Name" value="DS_Align_E" type="23" />
+                    <children>
+                        <node id="Categories" />
+                    </children>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

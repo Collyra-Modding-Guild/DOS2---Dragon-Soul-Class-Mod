@@ -11,6 +11,7 @@
         <field name="Loremaster" type="IntegerStatObjectFieldDefinition" value="3" />
         <field name="ArmorBoost" type="IntegerStatObjectFieldDefinition" value="150" />
         <field name="Damage" type="EnumerationStatObjectFieldDefinition" value="11" enumeration_type_name="Qualifier" />
+        <field name="Summoning" type="IntegerStatObjectFieldDefinition" value="100" />
       </fields>
     </stat_object>
   </stat_objects>
