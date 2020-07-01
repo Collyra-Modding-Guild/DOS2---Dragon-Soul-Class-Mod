@@ -1,5 +1,5 @@
 INIT
-CHARACTER:%Caster=null
+
 
 EVENTS
 //Change Alignment to Good
@@ -11,12 +11,16 @@ ON
 	OnSkillCast(_Caster, Shout_DragonSoul_Align_G)
 	
 ACTIONS
-	Set(%Caster, _Caster)
-	SetTag(_Caster, "tagkey_DS_Align_G")
-	SetTag(%Caster, "tagkey_DS_Align_G")
-	SetCanFight(%Caster,0)
-//	CharacterRemoveSkill(%Caster, Shout_DragonSoul_Align_E)
-//	CharacterRemoveSkill(%Caster, Shout_DragonSoul_Align_G)
+	SetTag(_Caster,"DS_Align_G")
+
+	
+	IF "c1"
+          IsTagged(_Caster,"DS_Align_G")
+     THEN
+          	CharacterRemoveSkill(_Caster, Shout_DragonSoul_Align_G)
+			CharacterRemoveSkill(_Caster, Shout_DragonSoul_Align_E)
+     ENDIF
+	
 	
 	
 //Change Alignment to Evil
@@ -28,6 +32,12 @@ ON
 	OnSkillCast(_Caster, Shout_DragonSoul_Align_E)
 	
 ACTIONS
-	SetTag(_Caster, DS_Align_E)
-	CharacterRemoveSkill(_Caster, Shout_DragonSoul_Align_E)
-	CharacterRemoveSkill(_Caster, Shout_DragonSoul_Align_G)
+	SetTag(_Caster, "DS_Align_E")
+	
+	IF "c1"
+          IsTagged(_Caster,"DS_Align_E")
+     THEN
+          	CharacterRemoveSkill(_Caster, Shout_DragonSoul_Align_G)
+			CharacterRemoveSkill(_Caster, Shout_DragonSoul_Align_E)
+     ENDIF
+	
