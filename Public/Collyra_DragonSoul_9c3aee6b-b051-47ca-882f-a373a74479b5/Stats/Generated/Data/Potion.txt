@@ -9,3 +9,12 @@ data "Loremaster" "3"
 data "ArmorBoost" "150"
 data "Damage" "10"
 
+new entry "Stats_DragonSoul_Charges"
+type "Potion"
+data "Strength" "9"
+data "Finesse" "-10"
+data "PhysicalArmorMastery" "500"
+data "Loremaster" "3"
+data "ArmorBoost" "150"
+data "Damage" "10"
+
