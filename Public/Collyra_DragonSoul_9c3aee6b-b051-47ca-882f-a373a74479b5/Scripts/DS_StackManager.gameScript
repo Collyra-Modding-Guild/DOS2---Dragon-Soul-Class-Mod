@@ -1,0 +1,44 @@
+INIT
+
+EVENTS
+EVENT Collyra_DS_StackManager
+VARS
+CHARACTER:_Player
+INT:%Stacks=null
+
+ON
+	OnSkillCast(_Player, Shout_DragonSoul_Meditation)
+
+ACTIONS
+	
+	IF "c1"
+	CharacterHasStatus(_Player, "Dragon_Soul_Stack_4")
+	THEN
+	CharacterApplyStatus(_Player, "Dragon_Soul_Stack_5", -1.0)
+	ENDIF
+	
+	IF "c1"
+	CharacterHasStatus(_Player, "Dragon_Soul_Stack_3")
+	THEN
+	CharacterApplyStatus(_Player, "Dragon_Soul_Stack_4", -1.0)
+	ENDIF
+	
+	IF "c1"
+	CharacterHasStatus(_Player, "Dragon_Soul_Stack_2")
+	THEN
+	CharacterApplyStatus(_Player, "Dragon_Soul_Stack_3", -1.0)
+	ENDIF
+	
+	IF "c1"
+	CharacterHasStatus(_Player, "Dragon_Soul_Stack_1")
+	THEN
+	CharacterApplyStatus(_Player, "Dragon_Soul_Stack_2", -1.0)
+	ENDIF
+	
+	IF "c1"
+	CharacterHasStatus(_Player, "Dragon_Soul_Stack_0")
+	THEN
+	CharacterApplyStatus(_Player, "Dragon_Soul_Stack_1", -1.0)
+	ENDIF
+	
+

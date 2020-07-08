@@ -9,12 +9,27 @@ data "Loremaster" "3"
 data "ArmorBoost" "150"
 data "Damage" "10"
 
-new entry "Stats_DragonSoul_Charges"
+new entry "Stats_DragonSoul_Stack_1"
 type "Potion"
-data "Strength" "9"
-data "Finesse" "-10"
-data "PhysicalArmorMastery" "500"
-data "Loremaster" "3"
-data "ArmorBoost" "150"
-data "Damage" "10"
+data "StackId" "Stack_SoulStat"
+
+new entry "Stats_DragonSoul_Stack_2"
+type "Potion"
+data "StackId" "Stack_SoulStat"
+
+new entry "Stats_DragonSoul_Stack_3"
+type "Potion"
+data "StackId" "Stack_SoulStat"
+
+new entry "Stats_DragonSoul_Stack_4"
+type "Potion"
+data "StackId" "Stack_SoulStat"
+
+new entry "Stats_DragonSoul_Stack_5"
+type "Potion"
+data "StackId" "Stack_SoulStat"
+
+new entry "Stats_DragonSoul_Stack_0"
+type "Potion"
+data "StackId" "Stack_SoulStat"
 
