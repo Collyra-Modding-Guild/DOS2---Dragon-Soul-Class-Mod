@@ -3,7 +3,7 @@
   <stat_objects>
     <stat_object is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="FULL_DRAGON_SOUL" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="FULL_DRAGON_SOUL_G" />
         <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
         <field name="InitiateCombat" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
         <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Full Dragon Form" />
@@ -13,8 +13,15 @@
         <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_DragonSoul_FulLDragon" />
         <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_Polymorphing" />
         <field name="IsInvulnerable" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="PolymorphResult" type="StringStatObjectFieldDefinition" value="ff52ab42-06f6-429d-bc15-610302a2a019" />
+        <field name="PolymorphResult" type="StringStatObjectFieldDefinition" value="39b88d7f-45f7-4579-8ad9-6e350557defe" />
         <field name="Skills" type="StringStatObjectFieldDefinition" value="Shout_DraonSoul_CancelDragonForm" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="FULL_DRAGON_SOUL_E" />
+        <field name="PolymorphResult" type="StringStatObjectFieldDefinition" value="39b88d7f-45f7-4579-8ad9-6e350557defe" />
+        <field name="Using" type="BaseClassStatObjectFieldDefinition" value="FULL_DRAGON_SOUL_G" />
       </fields>
     </stat_object>
   </stat_objects>

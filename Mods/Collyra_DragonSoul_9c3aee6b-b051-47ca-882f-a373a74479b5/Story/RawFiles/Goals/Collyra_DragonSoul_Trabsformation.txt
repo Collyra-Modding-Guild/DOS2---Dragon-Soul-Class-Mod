@@ -12,7 +12,7 @@ ObjectGetFlag(_Char, "DS_Align_G", _IsFlagOn)
 AND
 _IsFlagOn == 1
 THEN
-ApplyStatus(_Char, "FULL_DRAGON_SOUL", -1.0);
+ApplyStatus(_Char, "FULL_DRAGON_SOUL_G", -1.0);
 
 IF
 SkillCast(_Char,"Shout_DragonSoul_Pep", _, _)
@@ -21,7 +21,7 @@ ObjectGetFlag(_Char, "DS_Align_E", _IsFlagOn)
 AND
 _IsFlagOn == 1
 THEN
-ApplyStatus(_Char, "BLIND", 10.0);
+ApplyStatus(_Char, "FULL_DRAGON_SOUL_E", -1.0);
 
 
 IF
