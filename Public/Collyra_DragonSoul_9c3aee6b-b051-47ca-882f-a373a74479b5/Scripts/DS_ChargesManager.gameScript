@@ -1,0 +1,17 @@
+INIT
+
+
+EVENTS
+//Soul Charges Manager
+EVENT Collyra_DS_ChargesManager
+VARS
+CHARACTER:_Caster
+
+
+	
+
+ON
+	OnSkillCast(_Caster, Shout_DragonSoul_Meditation)
+	
+ACTIONS
+
