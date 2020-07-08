@@ -1,0 +1,48 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+//REGION DRAGONSOUL_TRANSFORMATIONS & ALIGNMENT HANDLER
+
+IF
+SkillCast(_Char,"Shout_DragonSoul_Pep", _, _)
+AND
+ObjectGetFlag(_Char, "DS_Align_G", _IsFlagOn)
+AND
+_IsFlagOn == 1
+THEN
+ApplyStatus(_Char, "FULL_DRAGON_SOUL", 10.0);
+
+IF
+SkillCast(_Char,"Shout_DragonSoul_Pep", _, _)
+AND
+ObjectGetFlag(_Char, "DS_Align_E", _IsFlagOn)
+AND
+_IsFlagOn == 1
+THEN
+ApplyStatus(_Char, "BLIND", 10.0);
+
+
+IF
+SkillCast(_Char,"Shout_DragonSoul_Align_G", _, _)
+THEN
+ObjectSetFlag(_Char, "DS_Align_G");
+ObjectClearFlag(_Char, "DS_Align_E");
+DisplayText(_Char, "<font color='#00FF00' size='50'>YOU ARE NOW A GUARDIAN DRAON</font>");
+
+
+
+IF
+ SkillCast(_Char,"Shout_DragonSoul_Align_E", _, _)
+THEN
+ ObjectSetFlag(_Char, "DS_Align_E");
+ ObjectClearFlag(_Char, "DS_Align_G");
+ DisplayText(_Char, "<font color='#FF0000' size='50'>YOU ARE NOW A SUBJUGATOR DRAON</font>");
+
+//
+
+
+EXITSECTION
+
+ENDEXITSECTION

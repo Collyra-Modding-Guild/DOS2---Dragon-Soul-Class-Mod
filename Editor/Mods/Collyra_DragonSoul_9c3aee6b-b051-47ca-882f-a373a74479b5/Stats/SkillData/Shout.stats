@@ -10,7 +10,6 @@
         <field name="ActionPoints" type="IntegerStatObjectFieldDefinition" value="0" />
         <field name="Cooldown" type="IntegerStatObjectFieldDefinition" value="1" />
         <field name="AIFlags" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="AIFlags" />
-        <field name="SkillProperties" type="StringStatObjectFieldDefinition" value="FULL_DRAGON_SOUL,100, -1" />
         <field name="AreaRadius" type="IntegerStatObjectFieldDefinition" value="0" />
         <field name="AddWeaponRange" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
         <field name="TargetConditions" type="StringStatObjectFieldDefinition" value="Self" />
@@ -46,7 +45,7 @@
         <field name="AIFlags" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="AIFlags" />
         <field name="AreaRadius" type="IntegerStatObjectFieldDefinition" value="0" />
         <field name="AddWeaponRange" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
-        <field name="TargetConditions" type="StringStatObjectFieldDefinition" value="Self&amp;(!Tagged:DS_Align_G)" />
+        <field name="TargetConditions" type="StringStatObjectFieldDefinition" value="Self;!Flagged:DS_Align_G" />
         <field name="UseCharacterStats" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
         <field name="UseWeaponDamage" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
         <field name="UseWeaponProperties" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
@@ -66,6 +65,7 @@
         <field name="Magic Cost" type="IntegerStatObjectFieldDefinition" value="0" />
         <field name="CanTargetCharacters" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
         <field name="CanTargetItems" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
+        <field name="Requirements" type="StringStatObjectFieldDefinition" value="SELF:IF(Tagged:INCARNATE_S)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

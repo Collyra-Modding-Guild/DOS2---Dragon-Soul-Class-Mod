@@ -1,4 +1,4 @@
 new skillset "Class_DragonSoul"
 add skill "Shout_DragonSoul_Pep"
-add skill "Summon_DragonSoul_Soul"
 add skill "Shout_DragonSoul_Align_G"
+add skill "Shout_DragonSoul_Align_E"

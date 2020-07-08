@@ -10,14 +10,14 @@
     <stat_object is_substat="true">
       <fields>
         <field name="Name" type="NameStatObjectFieldDefinition" value="Class_DragonSoul_substat" />
-        <field name="Skills" type="StatReferenceStatObjectFieldDefinition" stat_name="Summon_DragonSoul_Soul" />
+        <field name="Skills" type="StatReferenceStatObjectFieldDefinition" stat_name="Shout_DragonSoul_Align_G" />
         <field name="Using" type="BaseClassStatObjectFieldDefinition" value="Class_DragonSoul" />
       </fields>
     </stat_object>
     <stat_object is_substat="true">
       <fields>
         <field name="Name" type="NameStatObjectFieldDefinition" value="New_Stat_0" />
-        <field name="Skills" type="StatReferenceStatObjectFieldDefinition" stat_name="Shout_DragonSoul_Align_G" />
+        <field name="Skills" type="StatReferenceStatObjectFieldDefinition" stat_name="Shout_DragonSoul_Align_E" />
         <field name="Using" type="BaseClassStatObjectFieldDefinition" value="Class_DragonSoul" />
       </fields>
     </stat_object>

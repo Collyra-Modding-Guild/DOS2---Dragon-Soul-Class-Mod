@@ -11,11 +11,12 @@ ON
 	OnSkillCast(_Caster, Shout_DragonSoul_Align_G)
 	
 ACTIONS
-	SetTag(_Caster,"DS_Align_G")
+	ClearFlag(_Caster, "DS_Align_E")
+	SetFlag(_Caster,"DS_Align_G")
 
 	
 	IF "c1"
-          IsTagged(_Caster,"DS_Align_G")
+          HasFlag(_Caster, "DS_Align_G")
      THEN
           	CharacterRemoveSkill(_Caster, Shout_DragonSoul_Align_G)
 			CharacterRemoveSkill(_Caster, Shout_DragonSoul_Align_E)
@@ -32,10 +33,11 @@ ON
 	OnSkillCast(_Caster, Shout_DragonSoul_Align_E)
 	
 ACTIONS
-	SetTag(_Caster, "DS_Align_E")
+	ClearFlag(_Caster, "DS_Align_G")
+	SetFlag(_Caster,"DS_Align_E")
 	
 	IF "c1"
-          IsTagged(_Caster,"DS_Align_E")
+          HasFlag(_Caster, "DS_Align_E")
      THEN
           	CharacterRemoveSkill(_Caster, Shout_DragonSoul_Align_G)
 			CharacterRemoveSkill(_Caster, Shout_DragonSoul_Align_E)
