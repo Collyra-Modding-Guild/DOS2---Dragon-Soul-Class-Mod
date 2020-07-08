@@ -12,7 +12,7 @@ ObjectGetFlag(_Char, "DS_Align_G", _IsFlagOn)
 AND
 _IsFlagOn == 1
 THEN
-ApplyStatus(_Char, "FULL_DRAGON_SOUL", 10.0);
+ApplyStatus(_Char, "FULL_DRAGON_SOUL", -1.0);
 
 IF
 SkillCast(_Char,"Shout_DragonSoul_Pep", _, _)
@@ -40,7 +40,7 @@ THEN
  ObjectClearFlag(_Char, "DS_Align_G");
  DisplayText(_Char, "<font color='#FF0000' size='50'>YOU ARE NOW A SUBJUGATOR DRAON</font>");
 
-//
+//END_REGION
 
 
 EXITSECTION
