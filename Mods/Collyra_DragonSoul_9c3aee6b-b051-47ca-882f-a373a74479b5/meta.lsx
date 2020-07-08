@@ -69,6 +69,20 @@
                                         </node>
                                     </children>
                                 </node>
+                                <node id="Script">
+                                    <attribute id="UUID" value="1c557cda-804f-4898-b880-0b5ec995e36a" type="22" />
+                                    <children>
+                                        <node id="Parameters">
+                                            <children>
+                                                <node id="Parameter">
+                                                    <attribute id="MapKey" value="HardcoreOnly" type="22" />
+                                                    <attribute id="Type" value="1" type="4" />
+                                                    <attribute id="Value" value="0" type="23" />
+                                                </node>
+                                            </children>
+                                        </node>
+                                    </children>
+                                </node>
                             </children>
                         </node>
                         <node id="TargetModes">

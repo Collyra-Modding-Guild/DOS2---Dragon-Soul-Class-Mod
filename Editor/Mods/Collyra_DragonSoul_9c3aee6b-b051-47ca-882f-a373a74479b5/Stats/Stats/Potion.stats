@@ -16,13 +16,38 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_DragonSoul_Charges" />
-        <field name="Strength" type="EnumerationStatObjectFieldDefinition" value="191" enumeration_type_name="Penalty PreciseQualifier" />
-        <field name="Finesse" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="Penalty PreciseQualifier" />
-        <field name="PhysicalArmorMastery" type="StringStatObjectFieldDefinition" value="500" />
-        <field name="Loremaster" type="IntegerStatObjectFieldDefinition" value="3" />
-        <field name="ArmorBoost" type="IntegerStatObjectFieldDefinition" value="150" />
-        <field name="Damage" type="EnumerationStatObjectFieldDefinition" value="11" enumeration_type_name="Qualifier" />
+        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_DragonSoul_Stack_1" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_SoulStat" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_DragonSoul_Stack_2" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_SoulStat" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_DragonSoul_Stack_3" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_SoulStat" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_DragonSoul_Stack_4" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_SoulStat" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_DragonSoul_Stack_5" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_SoulStat" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_DragonSoul_Stack_0" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_SoulStat" />
       </fields>
     </stat_object>
   </stat_objects>
