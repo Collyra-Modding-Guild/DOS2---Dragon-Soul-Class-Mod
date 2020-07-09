@@ -11,7 +11,6 @@ CharacterUsedItem(_Char, cb34938b-519c-4c69-a1e4-d7c1b40c005d)
 AND
 IsGameLevel("Collyra_DragonSoul_Testlevel", 1)
 THEN
-ApplyStatus(_Char, "Dragon_Soul_Stack_0", -1.0);
 CharacterApplyPreset(_Char, "DragonSoul");
 CharacterAddSkill(_Char, "Shout_DragonSoul_Meditation");
 CharacterAddSkill(_Char, "Rain_DragonSoul_FireRain");

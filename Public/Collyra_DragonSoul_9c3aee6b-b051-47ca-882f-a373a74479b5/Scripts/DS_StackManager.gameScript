@@ -1,44 +1,114 @@
 INIT
+INT:%SoulStack = 0
 
 EVENTS
-EVENT Collyra_DS_StackManager
+EVENT SoulStack_Loading
+
 VARS
 CHARACTER:_Player
-INT:%Stacks=null
 
 ON
-	OnSkillCast(_Player, Shout_DragonSoul_Meditation)
-
+	OnLoaded(_,_,_,_)
+	
 ACTIONS
 	
 	IF "c1"
-	CharacterHasStatus(_Player, "Dragon_Soul_Stack_4")
+	IsEqual(%SoulStack, 5)
 	THEN
 	CharacterApplyStatus(_Player, "Dragon_Soul_Stack_5", -1.0)
 	ENDIF
 	
 	IF "c1"
-	CharacterHasStatus(_Player, "Dragon_Soul_Stack_3")
+	IsEqual(%SoulStack, 4)
 	THEN
 	CharacterApplyStatus(_Player, "Dragon_Soul_Stack_4", -1.0)
 	ENDIF
 	
 	IF "c1"
-	CharacterHasStatus(_Player, "Dragon_Soul_Stack_2")
+	IsEqual(%SoulStack, 3)
 	THEN
 	CharacterApplyStatus(_Player, "Dragon_Soul_Stack_3", -1.0)
 	ENDIF
 	
 	IF "c1"
-	CharacterHasStatus(_Player, "Dragon_Soul_Stack_1")
+	IsEqual(%SoulStack, 2)
 	THEN
 	CharacterApplyStatus(_Player, "Dragon_Soul_Stack_2", -1.0)
 	ENDIF
 	
 	IF "c1"
-	CharacterHasStatus(_Player, "Dragon_Soul_Stack_0")
+	IsEqual(%SoulStack, 1)
 	THEN
 	CharacterApplyStatus(_Player, "Dragon_Soul_Stack_1", -1.0)
 	ENDIF
+	
+	IF "c1"
+	IsEqual(%SoulStack, 0)
+	THEN
+	CharacterApplyStatus(_Player, "Dragon_Soul_Stack_0", -1.0)
+	ENDIF
+	
+	
+EVENT SoulStack_Meditation
+
+VARS
+CHARACTER:_Player
+
+ON
+	OnSkillCast(_Player, Shout_DragonSoul_Meditation)
+
+ACTIONS	
+	Add(%SoulStack, +1)
+	//Subtract(%SoulStack, -1)
+	
+	IF "c1"
+	IsGreaterThen(%SoulStack, 5)
+	THEN
+	Set(%SoulStack, 5)
+	ENDIF
+	
+	IF "c1"
+	IsLessThen(%SoulStack, 0)
+	THEN
+	Set(%SoulStack, 0)
+	ENDIF
+	
+	IF "c1"
+	IsEqual(%SoulStack, 5)
+	THEN
+	CharacterApplyStatus(_Player, "Dragon_Soul_Stack_5", -1.0)
+	ENDIF
+	
+	IF "c1"
+	IsEqual(%SoulStack, 4)
+	THEN
+	CharacterApplyStatus(_Player, "Dragon_Soul_Stack_4", -1.0)
+	ENDIF
+	
+	IF "c1"
+	IsEqual(%SoulStack, 3)
+	THEN
+	CharacterApplyStatus(_Player, "Dragon_Soul_Stack_3", -1.0)
+	ENDIF
+	
+	IF "c1"
+	IsEqual(%SoulStack, 2)
+	THEN
+	CharacterApplyStatus(_Player, "Dragon_Soul_Stack_2", -1.0)
+	ENDIF
+	
+	IF "c1"
+	IsEqual(%SoulStack, 1)
+	THEN
+	CharacterApplyStatus(_Player, "Dragon_Soul_Stack_1", -1.0)
+	ENDIF
+	
+	IF "c1"
+	IsEqual(%SoulStack, 0)
+	THEN
+	CharacterApplyStatus(_Player, "Dragon_Soul_Stack_0", -1.0)
+	ENDIF
+	
+	
 	
 
