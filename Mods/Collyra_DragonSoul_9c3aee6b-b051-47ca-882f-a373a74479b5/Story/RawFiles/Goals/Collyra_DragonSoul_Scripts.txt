@@ -13,6 +13,7 @@ IsGameLevel("Collyra_DragonSoul_Testlevel", 1)
 THEN
 CharacterApplyPreset(_Char, "DragonSoul");
 CharacterAddSkill(_Char, "Shout_DragonSoul_Meditation");
+CharacterAddSkill(_Char, "Cone_DragonSoul_Knockdown");
 CharacterAddSkill(_Char, "Rain_DragonSoul_FireRain");
 
 
