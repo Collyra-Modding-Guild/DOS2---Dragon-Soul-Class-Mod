@@ -13,7 +13,7 @@
         <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_DragonSoul_FulLDragon" />
         <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_Polymorphing" />
         <field name="IsInvulnerable" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
-        <field name="PolymorphResult" type="StringStatObjectFieldDefinition" value="39b88d7f-45f7-4579-8ad9-6e350557defe" />
+        <field name="PolymorphResult" type="StringStatObjectFieldDefinition" value="d2d3f43f-a145-4535-9ee4-c979c98c5826" />
         <field name="Skills" type="StringStatObjectFieldDefinition" value="Shout_DraonSoul_CancelDragonForm" />
       </fields>
     </stat_object>

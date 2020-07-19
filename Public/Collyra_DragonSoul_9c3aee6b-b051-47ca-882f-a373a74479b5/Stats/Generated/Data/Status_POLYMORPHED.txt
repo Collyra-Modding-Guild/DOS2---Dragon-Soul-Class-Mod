@@ -13,7 +13,7 @@ data "StatsId" "Stats_DragonSoul_FulLDragon"
 data "StackId" "Stack_Polymorphing"
 data "IsInvulnerable" "Yes"
 data "Skills" "Shout_DraonSoul_CancelDragonForm"
-data "PolymorphResult" "39b88d7f-45f7-4579-8ad9-6e350557defe"
+data "PolymorphResult" "d2d3f43f-a145-4535-9ee4-c979c98c5826"
 
 new entry "FULL_DRAGON_SOUL_E"
 type "StatusData"
