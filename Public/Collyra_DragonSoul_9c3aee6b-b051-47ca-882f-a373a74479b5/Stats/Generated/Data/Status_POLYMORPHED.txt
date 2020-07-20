@@ -12,7 +12,7 @@ data "FormatColor" "White"
 data "StatsId" "Stats_DragonSoul_FulLDragon"
 data "StackId" "Stack_Polymorphing"
 data "IsInvulnerable" "No"
-data "Skills" "Shout_DraonSoul_CancelDragonForm; Cone_EnemyGroundSmash_Dragon; Cone_EnemyDragonBreath_Air; Shout_EnemyDragonWhirlwind; Projectile_DragonFlight, Jump_DragonDive; Projectile_EnemyDragon_Air"
+data "Skills" "Shout_DraonSoul_CancelDragonForm; Cone_EnemyGroundSmash_Dragon; Cone_EnemyDragonBreath_Air; Shout_EnemyDragonWhirlwind; Projectile_DragonFlight; Jump_DragonDive; Projectile_EnemyDragon_Air"
 data "PolymorphResult" "f14ea1e8-bbd9-4892-ac39-976abd5441f5"
 
 new entry "FULL_DRAGON_SOUL_E"

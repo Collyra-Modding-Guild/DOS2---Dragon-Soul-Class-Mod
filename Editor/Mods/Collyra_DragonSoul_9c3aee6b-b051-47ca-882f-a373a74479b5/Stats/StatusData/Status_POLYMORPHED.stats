@@ -14,7 +14,7 @@
         <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_Polymorphing" />
         <field name="IsInvulnerable" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="YesNo" />
         <field name="PolymorphResult" type="StringStatObjectFieldDefinition" value="f14ea1e8-bbd9-4892-ac39-976abd5441f5" />
-        <field name="Skills" type="StringStatObjectFieldDefinition" value="Shout_DraonSoul_CancelDragonForm; Cone_EnemyGroundSmash_Dragon; Cone_EnemyDragonBreath_Air; Shout_EnemyDragonWhirlwind; Projectile_DragonFlight, Jump_DragonDive; Projectile_EnemyDragon_Air" />
+        <field name="Skills" type="StringStatObjectFieldDefinition" value="Shout_DraonSoul_CancelDragonForm; Cone_EnemyGroundSmash_Dragon; Cone_EnemyDragonBreath_Air; Shout_EnemyDragonWhirlwind; Projectile_DragonFlight; Jump_DragonDive; Projectile_EnemyDragon_Air" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

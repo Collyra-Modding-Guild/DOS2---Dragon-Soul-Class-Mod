@@ -154,7 +154,7 @@
         <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Turn back into Humanoid" />
         <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="En Pep no vol ser un Drac." />
         <field name="FXScale" type="IntegerStatObjectFieldDefinition" value="100" />
-        <field name="PrepareAnimationInit" type="StringStatObjectFieldDefinition" value="skill_prepare_soul_01_start" />
+        <field name="PrepareAnimationInit" type="StringStatObjectFieldDefinition" value="skill_prepare_shout_01_start" />
         <field name="CastTextEvent" type="StringStatObjectFieldDefinition" value="cast" />
         <field name="Memory Cost" type="IntegerStatObjectFieldDefinition" value="0" />
         <field name="Magic Cost" type="IntegerStatObjectFieldDefinition" value="0" />
@@ -163,7 +163,7 @@
         <field name="CleanseStatuses" type="StringStatObjectFieldDefinition" value="FULL_DRAGON_SOUL_E;FULL_DRAGON_SOUL_G" />
         <field name="StatusClearChance" type="IntegerStatObjectFieldDefinition" value="100" />
         <field name="CastAnimation" type="StringStatObjectFieldDefinition" value="transform_to_ds" />
-        <field name="PrepareAnimationLoop" type="StringStatObjectFieldDefinition" value=" skill_prepare_soul_01_loop" />
+        <field name="PrepareAnimationLoop" type="StringStatObjectFieldDefinition" value=" skill_prepare_shout_01_loop" />
       </fields>
     </stat_object>
   </stat_objects>
