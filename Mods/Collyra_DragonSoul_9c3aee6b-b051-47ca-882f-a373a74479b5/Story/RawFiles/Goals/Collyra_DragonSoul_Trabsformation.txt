@@ -40,12 +40,6 @@ THEN
  ObjectClearFlag(_Char, "DS_Align_G");
  DisplayText(_Char, "<font color='#FF0000' size='50'>YOU ARE NOW A SUBJUGATOR DRAON</font>");
 
-
-IF
-SkillCast(_Char,"Shout_DraonSoul_CancelDragonForm", _, _)
-THEN
-ApplyStatus(_Char, "FULL_DRAGON_SOUL_E", 0.0);
-
 //END_REGION
 
 
