@@ -15,7 +15,10 @@ CharacterApplyPreset(_Char, "DragonSoul");
 CharacterAddSkill(_Char, "Shout_DragonSoul_Meditation");
 CharacterAddSkill(_Char, "Cone_DragonSoul_Knockdown");
 CharacterAddSkill(_Char, "Rain_DragonSoul_FireRain");
+CharacterAddSkill(_Char, "Jump_TitanDive");
 CharacterLevelUpTo(_Char,20);
+ClearTag(_Char, "DragonSoul Path Chosen");
+//ApplyStatus(_Char, "WINGS", -1.0);
 
 //END_REGION
 EXITSECTION
