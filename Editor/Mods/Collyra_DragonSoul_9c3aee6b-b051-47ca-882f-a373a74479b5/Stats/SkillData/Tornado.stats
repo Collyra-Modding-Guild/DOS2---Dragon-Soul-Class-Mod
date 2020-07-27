@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="b0c980b7-092d-4e57-bcff-822e2d926273">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="DragonSoul_Purification" />
+        <field name="ForGameMaster" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="YesNo" />
+        <field name="Ability" type="EnumerationStatObjectFieldDefinition" value="11" enumeration_type_name="SkillAbility" />
+        <field name="ActionPoints" type="IntegerStatObjectFieldDefinition" value="2" />
+        <field name="Cooldown" type="IntegerStatObjectFieldDefinition" value="5" />
+        <field name="TargetRadius" type="IntegerStatObjectFieldDefinition" value="13" />
+        <field name="HitRadius" type="IntegerStatObjectFieldDefinition" value="2" />
+        <field name="RandomPoints" type="IntegerStatObjectFieldDefinition" value="5" />
+        <field name="DeathType" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="Death Type" />
+        <field name="SurfaceType" type="EnumerationStatObjectFieldDefinition" value="0" enumeration_type_name="Surface Type" />
+        <field name="SurfaceRadius" type="IntegerStatObjectFieldDefinition" value="3" />
+        <field name="SurfaceLifetime" type="IntegerStatObjectFieldDefinition" value="0" />
+        <field name="SurfaceStatusChance" type="IntegerStatObjectFieldDefinition" value="100" />
+        <field name="PointsMaxOffset" type="IntegerStatObjectFieldDefinition" value="4" />
+        <field name="MemorizationRequirements" type="StringStatObjectFieldDefinition" value="Polymorph 0" />
+        <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Air_Tornado" />
+        <field name="DisplayName" type="TranslatedStringStatObjectFieldDefinition" value="Soul Purification" />
+        <field name="Description" type="TranslatedStringStatObjectFieldDefinition" value="Removes surfaces from the battlefield, reveals invisible characters and clears Warm, Burning and Hastened." />
+        <field name="StatsDescription" type="TranslatedStringStatObjectFieldDefinition" value="Radius: [1]" />
+        <field name="StatsDescriptionParams" type="StringStatObjectFieldDefinition" value="HitRadius" />
+        <field name="FXScale" type="IntegerStatObjectFieldDefinition" value="100" />
+        <field name="PrepareAnimationInit" type="StringStatObjectFieldDefinition" value="skill_prepare_air_01_start" />
+        <field name="PrepareAnimationLoop" type="StringStatObjectFieldDefinition" value="skill_prepare_air_01_loop" />
+        <field name="PrepareEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_Skills_Air_Prepare_Air_Tornado_Root_01,KeepRot,Detach:root;RS3_FX_Skills_Air_Prepare_Air_Tornado_Hand_01:Dummy_L_HandFX" />
+        <field name="CastAnimation" type="StringStatObjectFieldDefinition" value="skill_cast_cone_air_01_cast" />
+        <field name="CastTextEvent" type="StringStatObjectFieldDefinition" value="cast" />
+        <field name="CastEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_Skills_Air_Cast_Cone_Air_Tornado_Hand_01:Dummy_L_HandFX;RS3_FX_Skills_Air_Cast_Cone_Air_Tornado_Hand_Cast_01:Dummy_L_HandFX,Dummy_R_HandFX:cast" />
+        <field name="TargetEffect" type="StringStatObjectFieldDefinition" value="RS3_FX_UI_TargetPreviewer_Air_01" />
+        <field name="Memory Cost" type="IntegerStatObjectFieldDefinition" value="1" />
+        <field name="Magic Cost" type="IntegerStatObjectFieldDefinition" value="0" />
+        <field name="StatusClearChance" type="IntegerStatObjectFieldDefinition" value="100" />
+        <field name="CycleConditions" type="StringStatObjectFieldDefinition" value="Character;!Dead" />
+        <field name="SkillProperties" type="StringStatObjectFieldDefinition" value="FIRST_AID,100,0;" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>
