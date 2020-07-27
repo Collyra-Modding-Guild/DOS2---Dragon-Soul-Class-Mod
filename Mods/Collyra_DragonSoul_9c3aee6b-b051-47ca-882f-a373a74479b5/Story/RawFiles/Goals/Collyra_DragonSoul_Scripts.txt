@@ -17,7 +17,10 @@ CharacterAddSkill(_Char, "Cone_DragonSoul_Knockdown");
 CharacterAddSkill(_Char, "Rain_DragonSoul_FireRain");
 CharacterAddSkill(_Char, "Summon_DragonSoul_Soul");
 CharacterAddSkill(_Char, "Summon_Incarnate");
+CharacterAddSkill(_Char, "Jump_TitanDive");
 CharacterLevelUpTo(_Char,20);
+ClearTag(_Char, "DragonSoul Path Chosen");
+//ApplyStatus(_Char, "WINGS", -1.0);
 
 //END_REGION
 EXITSECTION
