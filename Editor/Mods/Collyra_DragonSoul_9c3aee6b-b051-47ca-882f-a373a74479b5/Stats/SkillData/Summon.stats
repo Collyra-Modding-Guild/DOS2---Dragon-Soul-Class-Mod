@@ -16,7 +16,7 @@
         <field name="SkillProperties" type="StringStatObjectFieldDefinition" value="DRAGON,100,-1;" />
         <field name="Memory Cost" type="IntegerStatObjectFieldDefinition" value="1" />
         <field name="Magic Cost" type="IntegerStatObjectFieldDefinition" value="0" />
-        <field name="Template" type="StringStatObjectFieldDefinition" value="13f9314d-e744-4dc5-acf2-c6bf77a04892" />
+        <field name="Template" type="StringStatObjectFieldDefinition" value="5b8cf657-f6c4-4a6c-89d4-b7bd69050019" />
         <field name="TargetRadius" type="IntegerStatObjectFieldDefinition" value="13" />
         <field name="SummonCount" type="IntegerStatObjectFieldDefinition" value="1" />
         <field name="Icon" type="StringStatObjectFieldDefinition" value="Skill_Summoning_SummonIncarnate" />

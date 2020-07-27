@@ -15,6 +15,8 @@ CharacterApplyPreset(_Char, "DragonSoul");
 CharacterAddSkill(_Char, "Shout_DragonSoul_Meditation");
 CharacterAddSkill(_Char, "Cone_DragonSoul_Knockdown");
 CharacterAddSkill(_Char, "Rain_DragonSoul_FireRain");
+CharacterAddSkill(_Char, "Summon_DragonSoul_Soul");
+CharacterAddSkill(_Char, "Summon_Incarnate");
 CharacterLevelUpTo(_Char,20);
 
 //END_REGION
