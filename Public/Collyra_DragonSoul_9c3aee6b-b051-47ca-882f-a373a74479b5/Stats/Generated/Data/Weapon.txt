@@ -1,0 +1,4 @@
+new entry "DragonEvilWeapon"
+type "Weapon"
+using "NoWeapon"
+
