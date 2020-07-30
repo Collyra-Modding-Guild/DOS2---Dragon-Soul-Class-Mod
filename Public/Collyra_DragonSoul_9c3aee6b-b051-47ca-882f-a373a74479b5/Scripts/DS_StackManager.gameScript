@@ -110,5 +110,72 @@ ACTIONS
 	ENDIF
 	
 	
+
+EVENT SoulStack_Snatch
+
+VARS
+CHARACTER:_Player
+CHARACTER:_Target
+
+ON
+	OnSkillCast(_Player, Target_DragonSoul_Snatch)
+
+ACTIONS	
+	
+	CharacterGetEnemy(_Target, _Target)
+	
+	IF "c1"
+	CharacterHasStatus(_Target, 
+	THEN
+	CharacterApplyStatus(_Player, "Dragon_Soul_Stack_5", -1.0)
+	ENDIF
+	
+	IF "c1"
+	IsGreaterThen(%SoulStack, 5)
+	THEN
+	Set(%SoulStack, 5)
+	ENDIF
+	
+	IF "c1"
+	IsLessThen(%SoulStack, 0)
+	THEN
+	Set(%SoulStack, 0)
+	ENDIF
+	
+	IF "c1"
+	IsEqual(%SoulStack, 5)
+	THEN
+	CharacterApplyStatus(_Player, "Dragon_Soul_Stack_5", -1.0)
+	ENDIF
+	
+	IF "c1"
+	IsEqual(%SoulStack, 4)
+	THEN
+	CharacterApplyStatus(_Player, "Dragon_Soul_Stack_4", -1.0)
+	ENDIF
+	
+	IF "c1"
+	IsEqual(%SoulStack, 3)
+	THEN
+	CharacterApplyStatus(_Player, "Dragon_Soul_Stack_3", -1.0)
+	ENDIF
+	
+	IF "c1"
+	IsEqual(%SoulStack, 2)
+	THEN
+	CharacterApplyStatus(_Player, "Dragon_Soul_Stack_2", -1.0)
+	ENDIF
+	
+	IF "c1"
+	IsEqual(%SoulStack, 1)
+	THEN
+	CharacterApplyStatus(_Player, "Dragon_Soul_Stack_1", -1.0)
+	ENDIF
+	
+	IF "c1"
+	IsEqual(%SoulStack, 0)
+	THEN
+	CharacterApplyStatus(_Player, "Dragon_Soul_Stack_0", -1.0)
+	ENDIF
 	
 
