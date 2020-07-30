@@ -2431,6 +2431,7 @@ database DB_Crime_PlayerAttacked([in](INTEGER)_, [in](CHARACTERGUID)_, [in](CHAR
 database DB_GLO_LVDismissCompanionsAfterDialog([in](STRING)_, [in](INTEGER)_, [in](INTEGER)_)
 database DB_KillCounter_StoredPlayerInCombat([in](STRING)_, [in](CHARACTERGUID)_)
 database DB_OriginsFane_ArxSmallVoidWokenQuestUpdate([in](INTEGER)_, [in](STRING)_)
+call Proc_Check_Meditation([in](CHARACTERGUID)_, [in](STRING)_)
 call ProcCrimeTryRegisteringUseForbiddenItem([in](CHARACTERGUID)_, [in](ITEMGUID)_, [in](INTEGER)_)
 query QRY_StartDialog([in](INTEGER)_, [in](STRING)_, [in](GUIDSTRING)_)
 call Stack([in](STRING)_, [in](GUIDSTRING)_)

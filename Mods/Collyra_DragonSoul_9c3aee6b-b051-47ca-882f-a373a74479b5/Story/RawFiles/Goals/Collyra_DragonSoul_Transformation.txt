@@ -11,10 +11,11 @@ AND
 ObjectGetFlag(_Char, "DS_Align_G", _IsFlagOn)
 AND
 _IsFlagOn == 1
+
 THEN
     Proc_DS_UnEquipHiddenWeapon(_Char);
     Proc_DS_UnEquipHiddenShield(_Char);
-    ApplyStatus(_Char, "FULL_DRAGON_SOUL_G", -1.0);
+    Proc_Check_Meditation(_Char, "FULL_DRAGON_SOUL_G");
     PlayAnimation(_Char,"transform_from_lizard");
 
 
@@ -27,8 +28,60 @@ _IsFlagOn == 1
 THEN
     Proc_DS_UnEquipHiddenWeapon(_Char);
     Proc_DS_UnEquipHiddenShield(_Char);
-    ApplyStatus(_Char, "FULL_DRAGON_SOUL_E", -1.0);
+    Proc_Check_Meditation(_Char, "FULL_DRAGON_SOUL_E");
     PlayAnimation(_Char,"transform_from_lizard");
+    
+PROC
+Proc_Check_Meditation((CHARACTERGUID)_Char, (STRING)_StatusToActive)
+AND
+HasActiveStatus(_Char, "Dragon_Soul_Stack_1", _IsStatusActive)
+AND
+_IsStatusActive == 1
+THEN
+ApplyStatus(_Char, _StatusToActive, 6.0);
+RemoveStatus(_Char, "Dragon_Soul_Stack_1");
+
+PROC
+Proc_Check_Meditation((CHARACTERGUID)_Char, (STRING)_StatusToActive)
+AND
+HasActiveStatus(_Char, "Dragon_Soul_Stack_2", _IsStatusActive)
+AND
+_IsStatusActive == 1
+THEN
+ApplyStatus(_Char, _StatusToActive, 12.0);
+RemoveStatus(_Char, "Dragon_Soul_Stack_2");
+
+PROC
+Proc_Check_Meditation((CHARACTERGUID)_Char, (STRING)_StatusToActive)
+AND
+HasActiveStatus(_Char, "Dragon_Soul_Stack_3", _IsStatusActive)
+AND
+_IsStatusActive == 1
+THEN
+ApplyStatus(_Char, _StatusToActive, 18.0);
+RemoveStatus(_Char, "Dragon_Soul_Stack_3");
+
+PROC
+Proc_Check_Meditation((CHARACTERGUID)_Char, (STRING)_StatusToActive)
+AND
+HasActiveStatus(_Char, "Dragon_Soul_Stack_4", _IsStatusActive)
+AND
+_IsStatusActive == 1
+THEN
+ApplyStatus(_Char, _StatusToActive, 24.0);
+RemoveStatus(_Char, "Dragon_Soul_Stack_4");
+
+PROC
+Proc_Check_Meditation((CHARACTERGUID)_Char, (STRING)_StatusToActive)
+AND
+HasActiveStatus(_Char, "Dragon_Soul_Stack_5", _IsStatusActive)
+AND
+_IsStatusActive == 1
+THEN
+ApplyStatus(_Char, _StatusToActive, 30.0);
+RemoveStatus(_Char, "Dragon_Soul_Stack_5");
+
+
 
 
 //END_REGION
