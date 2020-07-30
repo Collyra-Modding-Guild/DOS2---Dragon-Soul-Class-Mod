@@ -3,15 +3,29 @@
   <stat_objects>
     <stat_object is_substat="false">
       <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_DragonSoul_Stack_3" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_SoulStat" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
         <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_DragonSoul_FulLDragon" />
         <field name="Using" type="BaseClassStatObjectFieldDefinition" value="Stats_Polymorphed" />
-        <field name="Strength" type="EnumerationStatObjectFieldDefinition" value="191" enumeration_type_name="Penalty PreciseQualifier" />
-        <field name="Finesse" type="EnumerationStatObjectFieldDefinition" value="1" enumeration_type_name="Penalty PreciseQualifier" />
-        <field name="PhysicalArmorMastery" type="StringStatObjectFieldDefinition" value="500" />
-        <field name="Loremaster" type="IntegerStatObjectFieldDefinition" value="3" />
-        <field name="ArmorBoost" type="IntegerStatObjectFieldDefinition" value="150" />
-        <field name="Damage" type="EnumerationStatObjectFieldDefinition" value="11" enumeration_type_name="Qualifier" />
-        <field name="Summoning" type="IntegerStatObjectFieldDefinition" value="100" />
+        <field name="ArmorBoost" type="IntegerStatObjectFieldDefinition" value="50" />
+        <field name="BonusWeapon" type="StringStatObjectFieldDefinition" value="NoWeapon" />
+        <field name="Wits" type="EnumerationStatObjectFieldDefinition" value="151" enumeration_type_name="Penalty PreciseQualifier" />
+        <field name="PainReflection" type="IntegerStatObjectFieldDefinition" value="5" />
+        <field name="Leadership" type="IntegerStatObjectFieldDefinition" value="10" />
+        <field name="FireResistance" type="IntegerStatObjectFieldDefinition" value="25" />
+        <field name="EarthResistance" type="IntegerStatObjectFieldDefinition" value="25" />
+        <field name="WaterResistance" type="IntegerStatObjectFieldDefinition" value="25" />
+        <field name="AirResistance" type="IntegerStatObjectFieldDefinition" value="25" />
+        <field name="PoisonResistance" type="IntegerStatObjectFieldDefinition" value="25" />
+        <field name="PiercingResistance" type="IntegerStatObjectFieldDefinition" value="25" />
+        <field name="PhysicalResistance" type="IntegerStatObjectFieldDefinition" value="25" />
+        <field name="VitalityBoost" type="IntegerStatObjectFieldDefinition" value="100" />
+        <field name="APMaximum" type="IntegerStatObjectFieldDefinition" value="2" />
+        <field name="MagicArmorBoost" type="IntegerStatObjectFieldDefinition" value="50" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -23,12 +37,6 @@
     <stat_object is_substat="false">
       <fields>
         <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_DragonSoul_Stack_2" />
-        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_SoulStat" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_DragonSoul_Stack_3" />
         <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_SoulStat" />
       </fields>
     </stat_object>
@@ -48,6 +56,19 @@
       <fields>
         <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_DragonSoul_Stack_0" />
         <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_SoulStat" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameStatObjectFieldDefinition" value="Stats_DragonSoul_FulLDragon_E" />
+        <field name="Using" type="BaseClassStatObjectFieldDefinition" value="Stats_Polymorphed" />
+        <field name="Strength" type="EnumerationStatObjectFieldDefinition" value="151" enumeration_type_name="Penalty PreciseQualifier" />
+        <field name="Wits" type="EnumerationStatObjectFieldDefinition" value="151" enumeration_type_name="Penalty PreciseQualifier" />
+        <field name="AccuracyBoost" type="IntegerStatObjectFieldDefinition" value="10" />
+        <field name="DamageBoost" type="IntegerStatObjectFieldDefinition" value="75" />
+        <field name="APMaximum" type="IntegerStatObjectFieldDefinition" value="2" />
+        <field name="CriticalChance" type="IntegerStatObjectFieldDefinition" value="10" />
+        <field name="Intelligence" type="EnumerationStatObjectFieldDefinition" value="151" enumeration_type_name="Penalty PreciseQualifier" />
       </fields>
     </stat_object>
   </stat_objects>

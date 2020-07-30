@@ -1,0 +1,214 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+//REGION DRAGONSOUL_TRANSFORMATIONS
+
+IF
+SkillCast(_Char,"Shout_DragonSoul_Pep", _, _)
+AND
+ObjectGetFlag(_Char, "DS_Align_G", _IsFlagOn)
+AND
+_IsFlagOn == 1
+
+THEN
+    Proc_DS_UnEquipHiddenWeapon(_Char);
+    Proc_DS_UnEquipHiddenShield(_Char);
+    Proc_Check_Meditation(_Char, "FULL_DRAGON_SOUL_G");
+    PlayAnimation(_Char,"transform_from_lizard");
+
+
+IF
+SkillCast(_Char,"Shout_DragonSoul_Pep", _, _)
+AND
+ObjectGetFlag(_Char, "DS_Align_E", _IsFlagOn)
+AND
+_IsFlagOn == 1
+THEN
+    Proc_DS_UnEquipHiddenWeapon(_Char);
+    Proc_DS_UnEquipHiddenShield(_Char);
+    Proc_Check_Meditation(_Char, "FULL_DRAGON_SOUL_E");
+    PlayAnimation(_Char,"transform_from_lizard");
+    
+PROC
+Proc_Check_Meditation((CHARACTERGUID)_Char, (STRING)_StatusToActive)
+AND
+HasActiveStatus(_Char, "Dragon_Soul_Stack_1", _IsStatusActive)
+AND
+_IsStatusActive == 1
+THEN
+ApplyStatus(_Char, _StatusToActive, 6.0);
+RemoveStatus(_Char, "Dragon_Soul_Stack_1");
+
+PROC
+Proc_Check_Meditation((CHARACTERGUID)_Char, (STRING)_StatusToActive)
+AND
+HasActiveStatus(_Char, "Dragon_Soul_Stack_2", _IsStatusActive)
+AND
+_IsStatusActive == 1
+THEN
+ApplyStatus(_Char, _StatusToActive, 12.0);
+RemoveStatus(_Char, "Dragon_Soul_Stack_2");
+
+PROC
+Proc_Check_Meditation((CHARACTERGUID)_Char, (STRING)_StatusToActive)
+AND
+HasActiveStatus(_Char, "Dragon_Soul_Stack_3", _IsStatusActive)
+AND
+_IsStatusActive == 1
+THEN
+ApplyStatus(_Char, _StatusToActive, 18.0);
+RemoveStatus(_Char, "Dragon_Soul_Stack_3");
+
+PROC
+Proc_Check_Meditation((CHARACTERGUID)_Char, (STRING)_StatusToActive)
+AND
+HasActiveStatus(_Char, "Dragon_Soul_Stack_4", _IsStatusActive)
+AND
+_IsStatusActive == 1
+THEN
+ApplyStatus(_Char, _StatusToActive, 24.0);
+RemoveStatus(_Char, "Dragon_Soul_Stack_4");
+
+PROC
+Proc_Check_Meditation((CHARACTERGUID)_Char, (STRING)_StatusToActive)
+AND
+HasActiveStatus(_Char, "Dragon_Soul_Stack_5", _IsStatusActive)
+AND
+_IsStatusActive == 1
+THEN
+ApplyStatus(_Char, _StatusToActive, 30.0);
+RemoveStatus(_Char, "Dragon_Soul_Stack_5");
+
+
+
+
+//END_REGION
+
+
+//REGION Alignment Spells
+
+IF
+SkillCast(_Char,"Shout_DragonSoul_Align_G", _, _)
+THEN
+    ObjectSetFlag(_Char, "DS_Align_G");
+    ObjectClearFlag(_Char, "DS_Align_E");
+    DisplayText(_Char, "<font color='#00FF00' size='50'>YOU ARE NOW A GUARDIAN DRAON</font>");
+    SetTag(_Char, "DragonSoul Path Chosen"); 
+
+
+IF
+ SkillCast(_Char,"Shout_DragonSoul_Align_E", _, _)
+THEN
+    ObjectSetFlag(_Char, "DS_Align_E");
+    ObjectClearFlag(_Char, "DS_Align_G");
+    DisplayText(_Char, "<font color='#FF0000' size='50'>YOU ARE NOW A SUBJUGATOR DRAON</font>");
+    SetTag(_Char, "DragonSoul Path Chosen"); 
+
+//END_REGION
+
+
+//REGION Character Equipped Weapons Handle
+
+// Trying to Equip a Weapon/Shield while transformed ->Unequip them
+IF
+ItemEquipped(_ItemEquipped, _Char)
+AND
+HasActiveStatus(_Char, "FULL_DRAGON_SOUL_E", _IsStatusActive)
+AND
+_IsStatusActive == 1
+THEN
+    Proc_DS_UnEquipWeapons(_Char);
+
+// Return the Weapons on UnTransform
+
+IF
+CharacterStatusRemoved(_Char, "FULL_DRAGON_SOUL_E", _)
+THEN
+Proc_DS_EquipHiddenWeapon(_Char);
+Proc_DS_EquipHiddenShield(_Char);
+
+IF
+CharacterStatusRemoved(_Char, "FULL_DRAGON_SOUL_G", _)
+THEN
+Proc_EquipHiddenWeapon(_Char);
+Proc_EquipHiddenShield(_Char);
+
+
+PROC
+Proc_DS_UnEquipWeapons((CHARACTERGUID)_Char)
+AND
+CharacterGetEquippedItem(_Char,"Weapon",(ITEMGUID)_Weapon)
+THEN
+CharacterUnequipItem(_Char,_Weapon);
+
+PROC
+Proc_DS_UnEquipWeapons((CHARACTERGUID)_Char)
+AND
+CharacterGetEquippedItem(_Char,"Shield",(ITEMGUID)_Shield)
+THEN
+CharacterUnequipItem(_Char,_Shield);
+
+//END_REGION
+
+PROC
+Proc_DS_UnEquipHiddenWeapon((CHARACTERGUID)_Char) 
+AND
+CharacterGetEquippedItem(_Char,"Weapon",(ITEMGUID)_Weapon)
+THEN
+CharacterUnequipItem(_Char,_Weapon);
+DB_DS_HideEquippedWeapon(_Char,_Weapon);
+
+PROC
+Proc_DS_UnEquipHiddenShield((CHARACTERGUID)_Char)
+AND
+CharacterGetEquippedItem(_Char,"Shield",(ITEMGUID)_Shield)
+THEN
+CharacterUnequipItem(_Char,_Shield);
+DB_DS_HideEquippedShield(_Char,_Shield);
+
+
+
+PROC
+Proc_DS_EquipHiddenWeapon((CHARACTERGUID)_Char) 
+AND
+DB_DS_HideEquippedWeapon(_Char,_Weapon)
+AND
+ItemIsInCharacterInventory(_Weapon, _char, _IsInIventory)
+AND
+_IsInIventory == 1
+THEN
+CharacterEquipItem(_Char,_Weapon);
+NOT DB_DS_HideEquippedWeapon(_Char,_Weapon);
+
+
+PROC
+Proc_DS_EquipHiddenWeapon((CHARACTERGUID)_Char) 
+AND
+DB_DS_HideEquippedWeapon(_Char,_Weapon)
+THEN
+NOT DB_DS_HideEquippedWeapon(_Char,_Weapon);
+
+
+PROC
+Proc_DS_EquipHiddenShield((CHARACTERGUID)_Char)
+AND
+DB_DS_HideEquippedShield(_Char,_Shield)
+AND
+ItemIsInCharacterInventory(_Shield, _char, _IsInIventory)
+AND
+_IsInIventory == 1
+THEN
+CharacterEquipItem(_Char,_Shield);
+
+PROC
+Proc_DS_EquipHiddenShield((CHARACTERGUID)_Char)
+AND
+DB_DS_HideEquippedShield(_Char,_Shield)
+THEN
+NOT DB_DS_HideEquippedShield(_Char,_Shield);
+
+EXITSECTION
+
+ENDEXITSECTION

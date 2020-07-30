@@ -22,6 +22,8 @@
         <field name="Name" type="NameStatObjectFieldDefinition" value="FULL_DRAGON_SOUL_E" />
         <field name="PolymorphResult" type="StringStatObjectFieldDefinition" value="2ac4a4e9-d36f-473d-8b50-e78da2123831" />
         <field name="Using" type="BaseClassStatObjectFieldDefinition" value="FULL_DRAGON_SOUL_G" />
+        <field name="StatsId" type="StringStatObjectFieldDefinition" value="Stats_DragonSoul_FulLDragon_E" />
+        <field name="StackId" type="StringStatObjectFieldDefinition" value="Stack_Polymorphing" />
       </fields>
     </stat_object>
   </stat_objects>

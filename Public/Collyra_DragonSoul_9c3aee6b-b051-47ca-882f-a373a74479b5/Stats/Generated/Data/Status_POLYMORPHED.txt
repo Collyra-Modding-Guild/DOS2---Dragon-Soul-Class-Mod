@@ -19,5 +19,7 @@ new entry "FULL_DRAGON_SOUL_E"
 type "StatusData"
 data "StatusType" "POLYMORPHED"
 using "FULL_DRAGON_SOUL_G"
+data "StatsId" "Stats_DragonSoul_FulLDragon_E"
+data "StackId" "Stack_Polymorphing"
 data "PolymorphResult" "2ac4a4e9-d36f-473d-8b50-e78da2123831"
 
