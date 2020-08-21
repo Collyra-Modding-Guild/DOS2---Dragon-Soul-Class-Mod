@@ -58,6 +58,7 @@ ON
 	OnSkillCast(_Player, Shout_DragonSoul_Meditation)
 
 ACTIONS	
+	/*
 	Add(%SoulStack, +1)
 	//Subtract(%SoulStack, -1)
 	
@@ -109,7 +110,7 @@ ACTIONS
 	CharacterApplyStatus(_Player, "Dragon_Soul_Stack_0", -1.0)
 	ENDIF
 	
-	
+	*/
 
 EVENT SoulStack_Snatch
 
@@ -121,7 +122,7 @@ ON
 	OnSkillCast(_Player, Target_DragonSoul_Snatch)
 
 ACTIONS	
-	
+	/*
 	CharacterGetEnemy(_Target, _Target)
 	
 	IF "c1"
@@ -177,5 +178,5 @@ ACTIONS
 	THEN
 	CharacterApplyStatus(_Player, "Dragon_Soul_Stack_0", -1.0)
 	ENDIF
-	
+	*/
 

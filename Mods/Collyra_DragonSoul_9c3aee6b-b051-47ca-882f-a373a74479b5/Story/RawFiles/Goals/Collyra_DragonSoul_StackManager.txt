@@ -1,8 +1,72 @@
 Version 1
 SubGoalCombiner SGC_AND
 INITSECTION
+DB_Meditation_Statuses("Dragon_Soul_Stack_1", 1.0);
+DB_Meditation_Statuses("Dragon_Soul_Stack_2", 2.0);
+DB_Meditation_Statuses("Dragon_Soul_Stack_3", 3.0);
+DB_Meditation_Statuses("Dragon_Soul_Stack_4", 4.0);
+DB_Meditation_Statuses("Dragon_Soul_Stack_5", 5.0);
 
 KBSECTION
+
+IF
+SkillCast(_Char, "Shout_DragonSoul_Meditation",_,_)
+THEN
+Proc_MeditationIncrement(_Char, 1.0);
+
+
+PROC
+Proc_MeditationIncrement((CHARACTERGUID)_Char,(REAL)_Increment)
+AND
+DB_Meditation_Statuses(_MeditationStatuses, _MeditationStackNumber)
+AND
+HasActiveStatus(_Char, _MeditationStatuses, _IsStatusActive)
+AND
+_IsStatusActive == 1
+THEN
+Proc_ChangeMeditationStatus(_Char, _Increment, _MeditationStackNumber);
+RemoveStatus(_Char, _MeditationStatuses);
+
+PROC
+Proc_MeditationIncrement((CHARACTERGUID)_Char,(REAL)_Increment)
+AND
+NOT DB_Meditative_Characters(_Char, _)
+AND
+_Increment >= 0.0
+THEN
+Proc_ChangeMeditationStatus(_Char, _Increment, 0.0);
+
+
+PROC
+Proc_ChangeMeditationStatus((CHARACTERGUID)_Char,(REAL)_Increment, (REAL)_CurrMeditationStackNumber)
+AND
+RealSum(_CurrMeditationStackNumber, _Increment, _MeditationStackNumber)
+AND
+RealMax(_MeditationStackNumber, 0.0, _MeditationStackNumber)
+AND
+RealMin(_MeditationStackNumber, 5.0, _MeditationStackNumber)
+AND
+DB_Meditation_Statuses(_StatusToAply, _MeditationStackNumber)
+THEN
+ApplyStatus(_Char, _StatusToAply, -1.0);
+Proc_EraseCharMeditation(_Char);
+Proc_AddMeditativeChar(_Char, _MeditationStackNumber);
+
+PROC
+Proc_AddMeditativeChar((CHARACTERGUID)_Char,(REAL)_CurrMeditationStacks)
+AND
+_CurrMeditationStacks > 0.0
+THEN
+DB_Meditative_Characters(_Char, _CurrMeditationStacks);
+
+
+PROC
+Proc_EraseCharMeditation((CHARACTERGUID)_Char)
+AND
+DB_Meditative_Characters(_Char, _CurrStacks)
+THEN
+NOT DB_Meditative_Characters(_Char,_CurrStacks);
+
 
 EXITSECTION
 
